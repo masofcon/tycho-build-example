@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+   Copyright (c) 2020 George Suaridze.
+   This program and the accompanying materials are made available under
+   the terms of the Eclipse Public License 2.0 which is available at
+   https://www.eclipse.org/legal/epl-2.0/
+   SPDX-License-Identifier: EPL-2.0
+   Contributors:
+       George Suaridze - initial API and implementation
+-->
+<?pde version="3.8"?>
+<target name="Example Platform" sequenceNumber="1">
+<locations>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.sdk.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.ecf" version="0.0.0"/>
+<unit id="org.eclipse.ecf.filetransfer" version="0.0.0"/>
+<unit id="org.eclipse.ecf.identity" version="0.0.0"/>
+<unit id="org.eclipse.ecf.provider.filetransfer" version="0.0.0"/>
+<unit id="org.eclipse.emf.common.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.emf.ecore.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.xtext.xbase.lib" version="0.0.0"/>
+<unit id="com.google.gson" version="0.0.0"/>
+<unit id="com.google.guava" version="0.0.0"/>
+<repository location="http://download.eclipse.org/releases/2020-03/"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.license.feature.group" version="0.0.0"/>
+<repository location="http://download.eclipse.org/cbi/updates/license/2.0.2.v20181016-2210"/>
+</location>
+</locations>
+</target>
