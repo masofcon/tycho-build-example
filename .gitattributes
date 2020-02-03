@@ -1,0 +1,44 @@
+#---------------------
+# Text files
+#---------------------
+*.txt text
+*.java text
+MANIFEST.MF text
+package.info text
+*.target text
+*.exsd text
+p2.inf text
+.project text
+.classpath text
+*.properties text
+*.prefs text
+*.launch text
+*.p2f text
+*.ecore text
+*.genmodel text
+*.xcore text
+*.xmi text
+*.xml text
+*.xsd text
+*.htm text
+*.html text
+*.css text
+*.jsp text
+*.js text
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.sh text eol=lf
+#---------------------
+# Binary files
+#---------------------
+*.class binary
+*.jar binary
+*.jks binary
+*.exe binary
+*.dll binary
+*.so binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.gif binary
