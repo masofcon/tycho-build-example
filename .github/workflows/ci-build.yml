@@ -14,4 +14,18 @@ jobs:
       with:
         java-version: 11
     - name: Build with Maven
-      run: mvn clean verify -Dtycho.localArtifacts=ignore -B -V
+      run: mvn clean verify -PSDK -Dtycho.localArtifacts=ignore -B -V
+    - name: Publish to bintray  
+      uses: bpicode/github-action-upload-bintray@v0.9.0
+      if: success() 
+      with:
+        file: ./repositories/org.example.repository.sdk/target/org.example.repository.sdk.zip
+        api_user: masofcon
+        api_key: ${{ secrets.BINTRAY_API_KEY }}
+        repository: example-tycho-build
+        package: tycho-build-example
+        version: '1.0.0'
+        upload_path: integration/1.0.0/p2
+        publish: 0
+      
+          
