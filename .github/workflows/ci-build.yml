@@ -22,10 +22,11 @@ jobs:
         file: ./repositories/org.example.repository.sdk/target/org.example.repository.sdk.zip
         api_user: masofcon
         api_key: ${{ secrets.BINTRAY_API_KEY }}
+        repository_user: masofcon
         repository: example-tycho-build
         package: tycho-build-example
         version: '1.0.0'
-        upload_path: integration/1.0.0/p2
-        publish: 0
+        upload_path: integration/p2
+        publish: 1
       
           
