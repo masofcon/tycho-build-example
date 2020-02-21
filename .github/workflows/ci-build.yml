@@ -16,7 +16,7 @@ jobs:
     - name: Build with Maven
       run: mvn clean verify -PSDK -Dtycho.localArtifacts=ignore -B -V
     - name: Publish to bintray  
-      uses: bpicode/github-action-upload-bintray@v0.9.0
+      uses: bpicode/github-action-upload-bintray@master
       if: success() 
       with:
         file: ./repositories/org.example.repository.sdk/target/org.example.repository.sdk.zip
