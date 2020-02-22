@@ -16,14 +16,18 @@ jobs:
     - name: Build with Maven
       run: mvn clean verify -PSDK -Dtycho.localArtifacts=ignore -B -V
     - name: Publish to bintray  
-      uses: hpcsc/upload-bintray-docker-action@v1
+      uses: masofcon/upload-to-bintray-github-action@master
       if: success() 
       with:
-        sourcePath: ./repositories/org.example.repository.sdk/target/org.example.repository.sdk.zip
-        username: masofcon
-        apiKey: ${{ secrets.BINTRAY_API_KEY }}
+        source_path: ./repositories/org.example.repository.sdk/target/org.example.repository.sdk.zip
+        api_user: masofcon
+        api_key: ${{ secrets.BINTRAY_API_KEY }}
         repository: example-tycho-build
         package: tycho-build-example
         version: '1.0.0'
+        upload_path: update
+        publish: 1
+        explode: 1
+        override: 0
       
           
