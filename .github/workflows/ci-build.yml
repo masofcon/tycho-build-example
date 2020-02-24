@@ -23,9 +23,9 @@ jobs:
         api_user: masofcon
         api_key: ${{ secrets.BINTRAY_API_KEY }}
         repository: example-tycho-build
-        package: tycho-build-example
+        package: example-tycho-build
         version: '1.0.0'
-        upload_path: /update/1.0.0/
+        #upload_path: /update/1.0.0/
         publish: 1
         explode: 1
         override: 0
